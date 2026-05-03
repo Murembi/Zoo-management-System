@@ -1,6 +1,14 @@
 public class Animal {
     private String name;
     private String species;
+    private int id;
+
+    public Animal(String name, String species, int id){
+        this.name = name;
+        this.species = species;
+        this.id = id;
+
+    }
 
     public Animal(String name, String species){
         this.name = name;
@@ -12,13 +20,15 @@ public class Animal {
         species = "unknown";
     }
 
+    public int getId() {
+        return id;
+    }
     public String getName(){
-        return this.name;
+        return name;
     }
     
     public String getSpecies(){
-        return this.species;
-
+        return species;
     }
 
     public void makeSound(){
